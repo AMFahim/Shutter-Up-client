@@ -1,0 +1,12 @@
+.setBackground{
+  background-image: url(../../../images/Banner.jpg);
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backgroundLayer{
+  background-color: rgba(90, 78, 44, 0.52);
+  height: 700px;
+}

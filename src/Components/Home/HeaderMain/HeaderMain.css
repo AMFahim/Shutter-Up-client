@@ -1,0 +1,41 @@
+.modern-font{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 70px;
+}
+
+.font-size{
+  font-size: 90px;
+}
+
+.photographer{
+  color: #F5B041;
+}
+
+.teller{
+  font-family: 'Roboto Mono', monospace;
+}
+
+.setUnderline{
+  text-decoration: underline;
+  text-decoration-color: #F5B041;
+}
+
+.view-btn{
+  border-radius: 30px;
+}
+
+.view-btn:hover{
+  background-color: white;
+  border: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .modern-font{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+  }
+  
+  .font-size{
+    font-size: 35px;
+  }
+}
