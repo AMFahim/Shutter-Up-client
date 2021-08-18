@@ -1,0 +1,27 @@
+.card-style{
+  height: 400px;
+}
+
+.img-style{
+  height: 400px;
+  width: 500px;
+}
+
+.for-US{
+  color: #F5B041;
+}
+
+.for-about{
+  font-family: 'Poppins', sans-serif;
+}
+
+.contactStyle{
+  font-size: 30px;
+  margin-left: 10px;
+  color: #616A6B;
+}
+
+.contactStyle:hover{
+  color: #f0a52e;
+  transform: scale(1.5);
+}

@@ -10,3 +10,12 @@
   background-color: rgba(90, 78, 44, 0.52);
   height: 700px;
 }
+@media only screen and (max-width: 992px) {
+  .setBackground{
+    height: 850px;
+  }
+
+  .backgroundLayer{
+    height: 850px;
+  }
+}
