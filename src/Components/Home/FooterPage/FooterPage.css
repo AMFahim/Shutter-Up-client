@@ -1,0 +1,9 @@
+.footerIcon{
+  font-size: 30px;
+  margin-left: 10px;
+  color: white;
+}
+
+.footerIcon:hover{
+  color: #F5B041;
+}

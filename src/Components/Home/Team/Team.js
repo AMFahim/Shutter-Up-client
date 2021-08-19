@@ -1,6 +1,6 @@
 import React from 'react';
 import Teams from '../Teams/Teams';
-import avatar from '../../../images/about.jpg';
+import avatar from '../../../images/Team.jpg';
 const photographer =[
   {
     name: "Diane Arbus",

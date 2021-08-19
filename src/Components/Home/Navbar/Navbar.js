@@ -2,6 +2,8 @@ import React from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 import logo from '../../../images/Logo.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 
 const Header = () => {
@@ -10,7 +12,7 @@ const Header = () => {
         <div class="container-fluid">
           <Link to="/" class="navbar-brand" href="#"><img className="imgStyle" src={logo} alt="Shutter Up" /></Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
+            <FontAwesomeIcon className="for-US" icon={faBars}></FontAwesomeIcon>
           </button>
           <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul className="navbar-nav">
