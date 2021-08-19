@@ -6,7 +6,7 @@ import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/fre
 
 const About = () => {
   return (
-    <div className="pt-5">
+    <div className="for-padding">
       <div class="card mb-3 container card-style">
         <div class="row g-0">
           <div class="col-md-6">

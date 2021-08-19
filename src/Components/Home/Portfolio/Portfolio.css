@@ -1,0 +1,9 @@
+.for-padding{
+  padding-top: 100px;
+}
+
+.for-border:hover{
+ z-index: 1;
+ transform: scale(1.00);
+ border: 3px solid #F5B041;
+}

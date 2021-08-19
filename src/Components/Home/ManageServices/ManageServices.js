@@ -25,7 +25,7 @@ const service =[
 
 const ManageServices = () => {
   return (
-    <div className="pt-5 container text-center">
+    <div className="for-padding container text-center">
       <h2 className="font-style">[ WE PROVIDE <span className="for-US"><b>THE BEST SERVICES</b></span> ]</h2>
       <small className="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde maxime, veritatis, soluta ut velit quasi voluptatum tempora.</small>
       <div className="justify-content-center text-center">
