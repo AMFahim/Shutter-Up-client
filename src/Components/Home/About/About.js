@@ -16,10 +16,10 @@ const About = () => {
             <div class="card-body container-fluid text-center">
               <h1 class="card-title for-about">[ABOUT <span className="for-US">US</span>]</h1>
               <h3 className="pt-3 pb-3">We are excellent photographer and creative designer.</h3>
-              <small className="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos odit aliquam quis modi ab dolor ea harum libero consectetur facere maiores rem ipsum.</small>
-              <br /> <br />
+              <small className="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos odit aliquam quis modi ab dolor ea harum libero.</small>
+              <br />
               <p>
-                <small className="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit deleniti voluptatem, non accusamus perferendis numquam. Vitae dolores exercitationem.</small>
+                <small className="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit deleniti voluptatem, non accusamus perferendis numquam.</small>
               </p>
               <div className="icon-style">
               <a className="contactStyle" target="_blank" rel="noreferrer" href="https://www.facebook.com/" ><FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon></a>
