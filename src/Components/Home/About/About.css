@@ -23,7 +23,6 @@
 
 .contactStyle:hover{
   color: #f0a52e;
-  transform: scale(1.5);
 }
 
 @media only screen and (max-width: 768px) {
