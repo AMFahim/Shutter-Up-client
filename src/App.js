@@ -12,6 +12,10 @@ import ManageOrders from "./Components/Admin/ManageOrders/ManageOrders";
 import { createContext } from 'react';
 import SignIn from "./Components/SignIn/SignIn";
 import NoMatch from "./Components/NoMatch/NoMatch";
+import CheckOut from "./Components/ExtraPages/CheckOut/CheckOut";
+import PrivateRoute from "./Components/SignIn/PrivateRoute";
+import ServiceDetails from "./Components/ExtraPages/ServiceDetails/ServiceDetails";
+import AboutPage from "./Components/AboutPage/AboutPage";
 
 
 
@@ -38,6 +42,15 @@ function App() {
           </Route>
           <Route path="/signin">
             <SignIn />
+          </Route>
+          <Route path="/about">
+            <AboutPage />
+          </Route>
+          <PrivateRoute path="/checkOut">
+            <CheckOut/>
+          </PrivateRoute>
+          <Route path="/details/:serviceId">
+            <ServiceDetails/>
           </Route>
           <Route path="*">
             <NoMatch/>

@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 import Dashboard from '../Dashboard/Dashboard';
+import './AddServices.css';
 
 
 const AddServices = () => {
@@ -11,7 +12,6 @@ const AddServices = () => {
 
 
   const onSubmit = data => {
-    // console.log(data);
     const eventData = {
       name: data.name,
       price: data.price,
@@ -51,25 +51,21 @@ const AddServices = () => {
       <div className="col-md-4">
         <Dashboard/>
       </div>
-      <div className="col-md-7">
+      <div className="col-md-7 pt-4">
         <form onSubmit={handleSubmit(onSubmit)} className="container">
           <p>Service Name:-</p>
-          <input style={{ width: "400px" }} className="form-control" placeholder="name" {...register("name")} />
-          <br />
+          <input style={{ maxWidth: "400px" }} className="form-control responsive-input" placeholder="name" {...register("name")} required/>
           <br />
           <p>Price:-</p>
-          <input style={{ width: "400px" }} className="form-control" placeholder="Price" type="number" {...register("price")} />
-          <br />
+          <input style={{ maxWidth: "400px" }} className="form-control responsive-input" placeholder="Price" type="number" {...register("price")} required />
           <br />
           <p>Description:-</p>
-          <textarea style={{ width: "400px" }} className="form-control" placeholder="Description" {...register("description")} />
+          <textarea style={{ maxWidth: "400px" }} className="form-control responsive-input" placeholder="Description" {...register("description")} required/>
+          <br />
+          <input type="file" className="responsive-input" name="exampleRequired" onChange={handleImageUpload} required />
           <br />
           <br />
-          <input type="file" name="exampleRequired" onChange={handleImageUpload} />
-          {/* {errors.exampleRequired && <span>This field is required</span>} */}
-          <br />
-          <br />
-          <input className="btn btn-warning" type="submit" />
+          <input className="btn btn-warning submit-btn" type="submit" />
         </form>
       </div>
     </div>

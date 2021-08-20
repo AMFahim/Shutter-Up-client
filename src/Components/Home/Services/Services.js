@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from 'react';
 import './Services.css';
 
@@ -9,7 +10,7 @@ const Services = ({ services }) => {
         <div className="details">
          <h4 className="font-style">{services.name}</h4>
          <h5>${services.price}</h5>
-         <button className="btn for-btn">See More</button> <button className="btn for-btn">Buy Now</button>
+         <Link to={"/details/"+services._id}><button className="btn for-btn">See More</button> </Link> <Link to="/checkOut"><button className="btn for-btn">Buy Now</button></Link>
         </div>
       </div>
     </div>

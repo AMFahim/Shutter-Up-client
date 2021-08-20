@@ -10,8 +10,8 @@ import { makeStyles} from '@material-ui/core/styles';
 import HomeIcon from '@material-ui/icons/Home';
 import DashboardIcon from '@material-ui/icons/Dashboard';
 import AddIcon from '@material-ui/icons/Add';
-import EditIcon from '@material-ui/icons/Edit';
 import { withRouter } from 'react-router';
+import './Dashboard.css';
 
 const useStyles = makeStyles({
   drawer: {
@@ -44,7 +44,7 @@ const Dashboard = (props) => {
   ] 
   return (
       <MIUDrawer variant="permanent" className={classes.drawer}>
-     <List style={{backgroundColor:'antiquewhite'}}>
+     <List className="forResponsive" style={{backgroundColor:'antiquewhite'}}>
           {itemsList.map((item, index) => {
             const {text, icon, onClick} = item;  
             return(

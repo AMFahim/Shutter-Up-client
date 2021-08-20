@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 import logo from '../../../images/Logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { UserContext } from '../../../App';
 
 
-const Header = () => {
+const Navbar = () => {
+  const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+
   return (
       <nav className="navbar font-style navbar-expand-lg navbar-light container">
         <div class="container-fluid">
@@ -20,7 +23,7 @@ const Header = () => {
                 <Link to="/" className="nav-link active text-white text-bg" aria-current="page" href="#">HOME</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-white text-bg" href="#">ABOUT US</Link>
+                <Link to="/about" className="nav-link text-white text-bg" href="#">ABOUT US</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link text-white text-bg" href="#">SERVICES</Link>
@@ -29,10 +32,17 @@ const Header = () => {
                 <Link className="nav-link text-white text-bg" href="#">PORTFOLIO</Link>
               </li>
               <li className="nav-item">
-                <Link to="/signin" className="nav-link text-white text-bg" href="#">SIGN IN</Link>
+                <Link to="/addService" className="nav-link text-white text-bg" href="#">DASHBOARD</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link text-white text-bg" href="#">CONTACT US</Link>
+              </li>
+              <li className="nav-item">
+              <Link to={`/signin`} className="nav-link text-light text-bg" href="#">
+                  {
+                    loggedInUser.email ? "SIGN OUT" : "SIGN IN"
+                  }
+                  </Link>
               </li>
             </ul>
           </div>
@@ -41,4 +51,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;

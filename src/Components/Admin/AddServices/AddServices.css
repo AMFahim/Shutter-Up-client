@@ -1,0 +1,14 @@
+@media only screen and (max-width: 768px) {
+  .responsive-input{
+    max-width: 200px;
+    margin-left: 40px;
+  }
+
+  form p {
+    display: none;
+  }
+
+  .submit-btn{
+    margin-left: 40px;
+  }
+}
