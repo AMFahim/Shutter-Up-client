@@ -29,7 +29,7 @@ const Header = () => {
                 <Link className="nav-link text-white text-bg" href="#">PORTFOLIO</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-white text-bg" href="#">TEAM</Link>
+                <Link to="/signin" className="nav-link text-white text-bg" href="#">SIGN IN</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link text-white text-bg" href="#">CONTACT US</Link>

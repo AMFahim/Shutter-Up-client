@@ -32,19 +32,14 @@ const Dashboard = (props) => {
      onClick: () => history.push('/')
     },
     {
-     text: "Manage Product",
+     text: "Manage Orders",
      icon: <DashboardIcon/>,
-     onClick: () => history.push('/manageServices')
+     onClick: () => history.push('/manageOrders')
     },
     {
       text: "Add Service",
       icon: <AddIcon/>,
       onClick: () => history.push('/addService')
-    },
-    {
-      text: "Manage Orders",
-      icon: <EditIcon/>,
-      onClick: () => history.push('/manageOrders')
     }
   ] 
   return (

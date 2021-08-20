@@ -51,7 +51,7 @@ const AddServices = () => {
       <div className="col-md-4">
         <Dashboard/>
       </div>
-      <div className="col-md-8">
+      <div className="col-md-7">
         <form onSubmit={handleSubmit(onSubmit)} className="container">
           <p>Service Name:-</p>
           <input style={{ width: "400px" }} className="form-control" placeholder="name" {...register("name")} />
