@@ -11,6 +11,7 @@ import AddServices from "./Components/Admin/AddServices/AddServices";
 import ManageOrders from "./Components/Admin/ManageOrders/ManageOrders";
 import { createContext } from 'react';
 import SignIn from "./Components/SignIn/SignIn";
+import NoMatch from "./Components/NoMatch/NoMatch";
 
 
 
@@ -37,6 +38,9 @@ function App() {
           </Route>
           <Route path="/signin">
             <SignIn />
+          </Route>
+          <Route path="*">
+            <NoMatch/>
           </Route>
         </Switch>
       </Router>
