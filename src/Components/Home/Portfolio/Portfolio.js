@@ -1,6 +1,11 @@
 import React from 'react';
 import './Portfolio.css';
-import image from '../../../images/about.jpg';
+import boyFashion from '../../../images/boyFashion.jpg';
+import journey from '../../../images/Journey.jpg';
+import girlWithCamera from '../../../images/girlWithCamera.jpg';
+import travellingCouple from '../../../images/travellingCouple.jpg';
+import city from '../../../images/city.jpg';
+import menFashion from '../../../images/menFashion.jpg';
 
 const Portfolio = () => {
   return (
@@ -12,24 +17,24 @@ const Portfolio = () => {
       <div>
         <div class="card-group">
           <div class="card for-border">
-            <img src={image} class="card-img-top" alt="..." />
+            <img src={boyFashion} class="card-img-top" alt="..." />
           </div>
           <div class="card for-border">
-            <img src={image} class="card-img-top" alt="..." />
+            <img src={journey} class="card-img-top" alt="..." />
           </div>
           <div class="card for-border">
-            <img src={image} class="card-img-top" alt="..." />
+            <img src={girlWithCamera} class="card-img-top" alt="..." />
           </div>
         </div>
         <div class="card-group">
           <div class="card for-border">
-            <img src={image} class="card-img-top" alt="..." />
+            <img src={travellingCouple} class="card-img-top" alt="..." />
           </div>
           <div class="card for-border">
-            <img src={image} class="card-img-top" alt="..." />
+            <img src={city} class="card-img-top" alt="..." />
           </div>
           <div class="card for-border">
-            <img src={image} class="card-img-top" alt="..." />
+            <img src={menFashion} class="card-img-top" alt="..." />
           </div>
         </div>
       </div>

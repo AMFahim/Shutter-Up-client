@@ -1,20 +1,22 @@
 import React from 'react';
 import Teams from '../Teams/Teams';
-import avatar from '../../../images/Team.jpg';
+import photographer1 from '../../../images/grapher(1).jpg';
+import photographer2 from '../../../images/grapher (2).jpg';
+import photographer3 from '../../../images/grapher (3).jpg';
 const photographer =[
   {
     name: "Diane Arbus",
-    photo: avatar,
+    photo: photographer1,
     skill: "Photographer",
   },
   {
     name: "Cindy Sherman",
-    photo: avatar,
+    photo: photographer2,
     skill: "Photographer",
   },
   {
     name: "Helen Levitt",
-    photo: avatar,
+    photo: photographer3,
     skill: "Photographer",
   },
 ]
