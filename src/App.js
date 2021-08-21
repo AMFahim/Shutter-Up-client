@@ -20,6 +20,7 @@ import PortfolioPage from "./Components/PortfolioPage/PortfolioPage";
 import ServicePage from "./Components/ServicePage/ServicePage";
 import OrderPage from "./Components/OrderPage/OrderPage";
 import AddAdmin from "./Components/Admin/AddAdmin/AddAdmin";
+import ManageService from "./Components/Admin/ManageService/ManageService";
 
 
 
@@ -38,9 +39,9 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/addService">
+          <PrivateRoute path="/addService">
             <AddServices />
-          </Route>
+          </PrivateRoute>
           <Route path="/manageOrders">
             <ManageOrders />
           </Route>
@@ -59,9 +60,12 @@ function App() {
           <Route path="/orders">
             <OrderPage />
           </Route>
-          <Route path="/addAdmin">
+          <PrivateRoute path="/addAdmin">
             <AddAdmin />
-          </Route>
+          </PrivateRoute>
+          <PrivateRoute path="/manageService">
+            <ManageService />
+          </PrivateRoute>
           <PrivateRoute path="/checkOut">
             <CheckOut/>
           </PrivateRoute>

@@ -8,7 +8,6 @@ import Dashboard from '../Dashboard/Dashboard';
 
 const ManageOrders = () => {
 
-  const [loggedInUser, setLoggedInUser] = useContext(UserContext);
   const [allOrders, setAllOrders] = useState([]);
 
   useEffect(() => {
@@ -18,7 +17,7 @@ const ManageOrders = () => {
   })
   return (
     <div className="row">
-      <div className="col-md-4">
+      <div className="col-md-2">
         <Dashboard/>
       </div>
       <div className="col-md-8 text-center">
