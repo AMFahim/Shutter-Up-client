@@ -10,11 +10,7 @@ const ServiceDetails = () => {
   const [ServiceDetail, setServiceDetail] = useState([])
 
   useEffect(() => {
-    // const url = `http://localhost:5000/services?${serviceId}`;
-    // const service = url.find(sr => sr._id == serviceId)
-    // console.log(service)
-    fetch(`http://localhost:5000/services?id=${serviceId}`)
-      // .find(sr=> sr._id == serviceId)
+    fetch(`https://secret-escarpment-99943.herokuapp.com/services?id=${serviceId}`)
       .then(res => res.json())
       .then(data => setServiceDetail(data))
   }, [serviceId])

@@ -3,7 +3,7 @@ import React from 'react';
 const AllService = ({manageService}) => {
 
   const handleDeleteService = (event, id) => {
-    fetch(`http://localhost:5000/delete/${id}`, {
+    fetch(`https://secret-escarpment-99943.herokuapp.com/delete/${id}`, {
       method: "DELETE",
     })
     .then(res => res.json())

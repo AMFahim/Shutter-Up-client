@@ -16,7 +16,7 @@ const CheckOut = () => {
       address: data.address
     }
 
-    fetch('http://localhost:5000/addOrders', {
+    fetch('https://secret-escarpment-99943.herokuapp.com/addOrders', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(orderData)
