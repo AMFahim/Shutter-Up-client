@@ -23,19 +23,19 @@ const Navbar = () => {
                 <Link to="/" className="nav-link active text-white text-bg" aria-current="page" href="#">HOME</Link>
               </li>
               <li className="nav-item">
-                <Link to="/about" className="nav-link text-white text-bg" href="#">ABOUT US</Link>
+                <Link to="/aboutUs" className="nav-link text-white text-bg" href="#">ABOUT US</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-white text-bg" href="#">SERVICES</Link>
+                <Link to="/services" className="nav-link text-white text-bg" href="#">SERVICES</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-white text-bg" href="#">PORTFOLIO</Link>
+                <Link to="/portfolio" className="nav-link text-white text-bg" href="#">PORTFOLIO</Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/orders" className="nav-link text-white text-bg" href="#">ORDERS</Link>
               </li>
               <li className="nav-item">
                 <Link to="/addService" className="nav-link text-white text-bg" href="#">DASHBOARD</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link text-white text-bg" href="#">CONTACT US</Link>
               </li>
               <li className="nav-item">
               <Link to={`/signin`} className="nav-link text-light text-bg" href="#">

@@ -16,6 +16,10 @@ import CheckOut from "./Components/ExtraPages/CheckOut/CheckOut";
 import PrivateRoute from "./Components/SignIn/PrivateRoute";
 import ServiceDetails from "./Components/ExtraPages/ServiceDetails/ServiceDetails";
 import AboutPage from "./Components/AboutPage/AboutPage";
+import PortfolioPage from "./Components/PortfolioPage/PortfolioPage";
+import ServicePage from "./Components/ServicePage/ServicePage";
+import OrderPage from "./Components/OrderPage/OrderPage";
+import AddAdmin from "./Components/Admin/AddAdmin/AddAdmin";
 
 
 
@@ -43,8 +47,20 @@ function App() {
           <Route path="/signin">
             <SignIn />
           </Route>
-          <Route path="/about">
+          <Route path="/aboutUs">
             <AboutPage />
+          </Route>
+          <Route path="/portfolio">
+            <PortfolioPage />
+          </Route>
+          <Route path="/services">
+            <ServicePage />
+          </Route>
+          <Route path="/orders">
+            <OrderPage />
+          </Route>
+          <Route path="/addAdmin">
+            <AddAdmin />
           </Route>
           <PrivateRoute path="/checkOut">
             <CheckOut/>

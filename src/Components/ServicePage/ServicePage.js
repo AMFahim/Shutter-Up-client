@@ -1,18 +1,18 @@
 import React from 'react';
-import About from '../Home/About/About';
 import FooterPage from '../Home/FooterPage/FooterPage';
+import ManageServices from '../Home/ManageServices/ManageServices';
 import Navbar from '../Home/Navbar/Navbar';
 
-const AboutPage = () => {
+const ServicePage = () => {
   return (
     <div>
       <div className="bg-dark">
-        <Navbar />
+        <Navbar/>
       </div>
-      <About/>
+      <ManageServices/>
       <FooterPage/>
     </div>
   );
 };
 
-export default AboutPage;
+export default ServicePage;

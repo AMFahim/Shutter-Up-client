@@ -2,7 +2,7 @@ import React from 'react';
 import './ServiceInfo.css';
 
 const ServiceInfo = (props) => {
-  console.log(props)
+  // console.log(props)
   const {name, imageURL, description, price} = props.services
   return (
     <div>

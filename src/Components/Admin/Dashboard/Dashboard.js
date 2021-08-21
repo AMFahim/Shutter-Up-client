@@ -10,6 +10,7 @@ import { makeStyles} from '@material-ui/core/styles';
 import HomeIcon from '@material-ui/icons/Home';
 import DashboardIcon from '@material-ui/icons/Dashboard';
 import AddIcon from '@material-ui/icons/Add';
+import PersonAddIcon from '@material-ui/icons/PersonAdd';
 import { withRouter } from 'react-router';
 import './Dashboard.css';
 
@@ -40,6 +41,11 @@ const Dashboard = (props) => {
       text: "Add Service",
       icon: <AddIcon/>,
       onClick: () => history.push('/addService')
+    },
+    {
+      text: "Add Admin",
+      icon: <PersonAddIcon/>,
+      onClick: () => history.push('/addAdmin')
     }
   ] 
   return (

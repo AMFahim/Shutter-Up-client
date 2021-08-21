@@ -1,18 +1,15 @@
 import React from 'react';
-import About from '../Home/About/About';
 import FooterPage from '../Home/FooterPage/FooterPage';
 import Navbar from '../Home/Navbar/Navbar';
 
-const AboutPage = () => {
+const OrderPage = () => {
   return (
     <div>
       <div className="bg-dark">
-        <Navbar />
+        <Navbar/>
       </div>
-      <About/>
-      <FooterPage/>
     </div>
   );
 };
 
-export default AboutPage;
+export default OrderPage;
