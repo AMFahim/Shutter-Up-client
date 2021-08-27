@@ -98,7 +98,7 @@ const SignIn = () => {
     return (
         <div>
             <div className="bg-dark">
-                <Navbar/>
+                <Navbar />
             </div>
             <div>
                 <div className="row mx-auto">
@@ -135,7 +135,7 @@ const SignIn = () => {
                                     <Link to="#" onClick={() => setNewUser(!newUser)}>Create an account</Link>
                                 </p>
                         }
-                        <p style={{ color: 'red' }}>{user.error}</p>
+
                         {
                             user.success && <p style={{ color: 'green' }}>User {newUser ? 'Created' : 'Logged in '} successfully!</p>
                         }
