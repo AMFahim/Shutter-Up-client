@@ -2,7 +2,7 @@
 ## Hello 
 This Is My Personal Project made with MERN Stack.
 
-This Project [Live Site is here.](https://shutter-up.netlify.app/)
+This Project [Live Site is here.](https://shutter-up-f.web.app/)
 <hr/>
 
 ### Project Description:-
