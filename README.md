@@ -22,5 +22,5 @@ It is a photography service website. User can order any service from here by goi
 
 
 
-Server Side [Code is here](https://github.com/AMFahim/shutter-up-server)
+Server Side [Code is here.](https://github.com/AMFahim/shutter-up-server)
 
